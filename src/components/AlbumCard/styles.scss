@@ -1,12 +1,10 @@
 @import '../../utils/ui';
 
 .album-card {
-    all: unset;
     background-color: bisque;
     padding: 16px;
     border-radius: 8px;
     width: 400px;
-    cursor: pointer;
 }
 
 .album-card__settings {
@@ -43,9 +41,11 @@
 }
 
 .album-card__title {
+    all: unset;
     margin-bottom: 8px;
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .album-card__input {

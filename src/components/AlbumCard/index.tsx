@@ -71,7 +71,7 @@ const AlbumCard = ({ album }: AlbumCardProps) => {
     };
 
     return (
-        <Link to={`/photos/${album.id}`} className="album-card">
+        <div className="album-card">
             <div className="album-card__settings">
                 <Checkbox
                     checked={checked}
@@ -118,7 +118,9 @@ const AlbumCard = ({ album }: AlbumCardProps) => {
                 />
             </div>
             {!isEditable ? (
-                <div className="album-card__title">{title}</div>
+                <Link to={`/photos/${album.id}`} className="album-card__title">
+                    {title}
+                </Link>
             ) : (
                 <TextArea onChange={(val) => setTitle(val)} className="album-card__title album-card__input" value={title} />
             )}
@@ -144,7 +146,7 @@ const AlbumCard = ({ album }: AlbumCardProps) => {
                     />
                 )}
             </div>
-        </Link>
+        </div>
     );
 };
 
