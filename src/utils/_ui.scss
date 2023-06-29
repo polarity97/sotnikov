@@ -1,0 +1,9 @@
+@mixin input() {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid rgba(34,36,38,.15);
+    outline: none;
+    &:focus {
+        border: 1px solid rgba(18, 119, 221, 0.401);
+    }
+}

@@ -1,0 +1,16 @@
+
+.posts {
+    padding: 20px 28px;
+}
+
+.posts__filters {
+    margin-bottom: 20px;
+}
+
+.posts__posts {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}

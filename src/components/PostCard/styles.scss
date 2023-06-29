@@ -1,0 +1,94 @@
+@import '../../utils/ui';
+
+.post-card {
+    background-color: bisque;
+    padding: 16px;
+    max-width: 400px;
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.post-card__settings {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-card__favorite {
+    cursor: pointer;
+}
+
+.post-card__comments-icon {
+    cursor: pointer;
+}
+
+.post-card__edit {
+    cursor: pointer;
+    margin-left: auto !important;
+}
+
+.post-card__save {
+    margin-left: auto !important;
+    padding: 6px 8px !important;
+}
+
+.post-card__delete {
+    cursor: pointer;
+}
+
+.post-card__discard {
+    padding: 6px 8px !important;
+}
+
+.post-card__title {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.post-card__input {
+    @include input();
+    height: 100%;
+}
+
+.post-card__user {
+    margin-bottom: 8px;
+    margin-left: auto;
+}
+
+.post-card__text {
+    margin-bottom: 12px;
+}
+
+.post-card__comments-title {
+    margin-bottom: 4px;
+}
+
+.post-card__search {
+    width: 100%;
+}
+
+.comments {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+
+    .comment {
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #F4F1FA;
+        margin-bottom: 8px;
+
+        .comment__name {
+            font-weight: bold;
+        }
+
+        .comment__email {
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+    }
+}
+

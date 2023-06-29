@@ -1,0 +1,69 @@
+@import '../../utils/ui';
+
+.album-card {
+    all: unset;
+    background-color: bisque;
+    padding: 16px;
+    max-width: 400px;
+    border-radius: 8px;
+    min-width: 400px;
+    cursor: pointer;
+}
+
+.album-card__settings {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.album-card__favorite {
+    cursor: pointer;
+}
+
+.album-card__comments-icon {
+    cursor: pointer;
+}
+
+.album-card__edit {
+    cursor: pointer;
+    margin-left: auto !important;
+}
+
+.album-card__save {
+    margin-left: auto !important;
+    padding: 6px 8px !important;
+}
+
+.album-card__delete {
+    cursor: pointer;
+}
+
+.album-card__discard {
+    padding: 6px 8px !important;
+}
+
+.album-card__title {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.album-card__input {
+    @include input();
+    height: 100%;
+}
+
+.album-card__user {
+    margin-bottom: 8px;
+    margin-left: auto;
+}
+
+.album-card__text {
+    margin-bottom: 12px;
+}
+
+.album-card__search {
+    width: 100%;
+}
+

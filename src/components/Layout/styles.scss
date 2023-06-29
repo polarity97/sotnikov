@@ -1,0 +1,37 @@
+
+.layout {
+    // padding-top: 10px;
+    // background-color: azure;
+}
+
+.header {
+    position: sticky;
+    padding: 24px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+    z-index: 10;
+}
+
+.header__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.header__link--active {
+    color: var(--active);
+}

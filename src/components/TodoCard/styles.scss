@@ -1,0 +1,62 @@
+@import '../../utils/ui';
+
+.todo-card {
+    background-color: bisque;
+    padding: 16px;
+    max-width: 400px;
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.todo-card__settings {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.todo-card__favorite {
+    cursor: pointer;
+}
+
+.todo-card__comments-icon {
+    cursor: pointer;
+}
+
+.todo-card__edit {
+    cursor: pointer;
+    margin-left: auto !important;
+}
+
+.todo-card__save {
+    margin-left: auto !important;
+    padding: 6px 8px !important;
+}
+
+.todo-card__delete {
+    cursor: pointer;
+}
+
+.todo-card__discard {
+    padding: 6px 8px !important;
+}
+
+.todo-card__title {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.todo-card__input {
+    @include input();
+    height: 100%;
+}
+
+.todo-card__text {
+    margin-bottom: 12px;
+}
+
+.todo-card__title--crossed {
+    text-decoration: line-through;
+}
+

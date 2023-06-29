@@ -1,0 +1,16 @@
+
+.albums {
+    padding: 20px 28px;
+}
+
+.albums__filters {
+    margin-bottom: 20px;
+}
+
+.albums__albums {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}

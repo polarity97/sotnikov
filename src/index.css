@@ -1,0 +1,12 @@
+:root {
+    --active: #e03997;
+}
+
+body {
+    margin: 0;
+    background-color: azure;
+}
+
+* {
+    box-sizing: border-box;
+}

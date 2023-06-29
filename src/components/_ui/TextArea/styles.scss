@@ -1,0 +1,5 @@
+@import '../../../utils/ui';
+
+.input {
+    @include input();
+}

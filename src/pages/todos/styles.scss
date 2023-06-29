@@ -1,0 +1,16 @@
+
+.todos {
+    padding: 20px 28px;
+}
+
+.todos__filters {
+    margin-bottom: 20px;
+}
+
+.todos__todos {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
