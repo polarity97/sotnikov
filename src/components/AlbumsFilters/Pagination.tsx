@@ -22,6 +22,7 @@ const AlbumsPagination = ({ sx }: AlbumsPaginationProps) => {
     return (
         <Pagination
             sx={sx}
+            labelRowsPerPage="Albums per page"
             count={albumsStore.filteredAlbums.length}
             onChangePage={handleChangePage}
             onChangeItemsPage={handleChangeItemsPage}

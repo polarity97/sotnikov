@@ -7,10 +7,11 @@ interface Pagination {
     onChangePage: (start: number, end: number) => void;
     onChangeItemsPage: (val: number) => void;
     itemsPerPage: number;
+    labelRowsPerPage: string;
     sx?: SxProps<Theme> | undefined;
 }
 
-const Pagination = ({ sx, onChangePage, onChangeItemsPage, itemsPerPage, count }: Pagination) => {
+const Pagination = ({ sx, onChangePage, onChangeItemsPage, itemsPerPage, count, labelRowsPerPage }: Pagination) => {
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(itemsPerPage);
 
@@ -47,7 +48,7 @@ const Pagination = ({ sx, onChangePage, onChangeItemsPage, itemsPerPage, count }
             component="div"
             count={count}
             rowsPerPageOptions={rowsPerPageOptions}
-            labelRowsPerPage="Posts per page"
+            labelRowsPerPage={labelRowsPerPage}
             page={page}
             onPageChange={handleChangePage}
             rowsPerPage={rowsPerPage}

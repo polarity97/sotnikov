@@ -22,6 +22,7 @@ const PostsPagination = ({ sx }: PostsPaginationProps) => {
     return (
         <Pagination
             sx={sx}
+            labelRowsPerPage="Posts per page"
             count={postsStore.filteredPosts.length}
             onChangePage={handleChangePage}
             onChangeItemsPage={handleChangeItemsPage}

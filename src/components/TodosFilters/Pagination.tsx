@@ -22,6 +22,7 @@ const TodosPagination = ({ sx }: TodosPaginationProps) => {
     return (
         <Pagination
             sx={sx}
+            labelRowsPerPage="Todos per page"
             count={todosStore.filteredTodos.length}
             onChangePage={handleChangePage}
             onChangeItemsPage={handleChangeItemsPage}
