@@ -1,4 +1,4 @@
-import { observable, makeObservable, action, runInAction } from "mobx";
+import { observable, makeObservable, action, runInAction, computed } from "mobx";
 import { RootStore } from "./RootStore";
 import { api } from "../api";
 import { makePersistable } from "mobx-persist-store";
@@ -53,6 +53,9 @@ export class PostsStore {
             showFavorites: observable,
             ascUserIds: observable,
             ascTitle: observable,
+            showDelete: computed,
+            slicedPosts: computed,
+            filteredPosts: computed,
             setPosts: action,
             setFilteredUserIds: action,
             setFilteredTitle: action,

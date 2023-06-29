@@ -1,4 +1,4 @@
-import { observable, makeObservable, action, runInAction } from "mobx";
+import { observable, makeObservable, action, computed } from "mobx";
 import { RootStore } from "./RootStore";
 import { api } from "../api";
 import { makePersistable } from "mobx-persist-store";
@@ -50,6 +50,9 @@ export class AlbumsStore {
             showFavorites: observable,
             ascUserIds: observable,
             ascTitle: observable,
+            showDelete: computed,
+            slicedAlbums: computed,
+            filteredAlbums: computed,
             setAlbums: action,
             setFilteredUserIds: action,
             setFilteredTitle: action,

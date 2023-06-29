@@ -1,4 +1,4 @@
-import { observable, makeObservable, action, runInAction } from "mobx";
+import { observable, makeObservable, action, runInAction, computed } from "mobx";
 import { RootStore } from "./RootStore";
 import { api } from "../api";
 import { makePersistable } from "mobx-persist-store";
@@ -38,6 +38,9 @@ export class TodosStore {
             filteredTitle: observable,
             showCompleted: observable,
             ascTitle: observable,
+            showDelete: computed,
+            slicedTodos: computed,
+            filteredTodos: computed,
             setTodos: action,
             setFilteredTitle: action,
             toggleCompleted: action,
